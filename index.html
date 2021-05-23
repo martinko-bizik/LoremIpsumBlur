@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Lorem ipsum</title>
+</head>
+<body>
+    <div class=navbar>
+        <ul class="hover-ul">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#reviews">REVIEWS</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="hero" id="about">
+        <h1>Lorem ipsum<br>dolor sit amet consectetur</h1>
+        <p>
+            <span class="short-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...</span>
+            <span class="longer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </p>
+        <div class="hero-blur">
+            <div class="blur1"></div>
+            <div class="blur2"></div>
+            <img src="images/arrow-big.svg" class="arrow-big">
+        </div>
+    </div>
+    <img src="images/blurgreen.svg" class="blurgreen">
+    <div class="reviews" id="reviews">
+        <div class="r1">
+            <h2>Lorem ipsum</h2>
+            <p>
+                <span class="short-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</span>
+                <span class="longer-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </p>
+            <img src="images/arrow-small.svg" class="arrow-small">
+        </div>
+        <div class="r2">
+            <h2>Lorem ipsum</h2>
+            <p>
+                <span class="short-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</span>
+                <span class="longer-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </p>
+            <img src="images/arrow-small.svg" class="arrow-small">
+        </div>
+        <div class="r3">
+            <h2>Lorem ipsum</h2>
+            <p>
+                <span class="short-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</span>
+                <span class="longer-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </p>
+            <img src="images/arrow-small.svg" class="arrow-small">
+        </div>
+    </div>
+    <div class="gallery" id="gallery">
+        <div class="images">
+            <div class="img1">
+                <p><a href="#contact">CONTACT US<br>FOR MORE<br>INFORMATION</a></p>
+            </div>
+            <div class="img2">
+                <p><a href="#contact">CONTACT US<br>FOR MORE<br>INFORMATION</a></p>
+            </div>
+            <div class="img3">
+                <p><a href="#contact">CONTACT US<br>FOR MORE<br>INFORMATION</a></p>
+            </div>
+            <div class="img4">
+                <p><a href="#contact">CONTACT US<br>FOR MORE<br>INFORMATION</a></p>
+            </div>
+        </div>
+        <div id="blur4"></div>
+    </div>
+    <img src="images/bluryellow.svg" class="bluryellow">
+    <div class="contact" id="contact">
+        <input type="text" id="mail">
+        <button>CONTACT US</button>
+    </div>
+    <div class="icons">
+        <div class="phone">
+            <img src="images/phone.svg" class="icon-hover">
+            <div class="overlay">+421 421 421 421</div>
+        </div>
+        <div class="insta">
+            <img src="images/insta.svg" class="icon-hover2">
+            <div class="overlay2">@loremipsum</div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" >
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+    </script>
